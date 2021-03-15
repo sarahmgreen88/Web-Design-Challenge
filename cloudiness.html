@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Weather Analysis</title>
 </head>
 <body class = "body">
@@ -17,13 +16,13 @@
              <span class="navbar-toggler-icon"></span>
             </button>
             <!--Dropdown menu-->
-            <div class="dropdown" id="navbarNavDropdown">
+            <div class="dropdown" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item-dropdown">
                         <a class="nav-link-dropdown-toggle" href="#" id="navbarSupportedContent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
                         Plots
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarSupportedContent">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
                             <a class="dropdown-item" href="humidity.html">Humidity</a>
                             <a class="dropdown-item" href = "wind-speed.html">Wind Speed</a>
@@ -40,27 +39,53 @@
             </div>
         </div>
     </nav>
-        <!--body of the website-->
+
+
+    <div class = "container"></div>
         <div class = "row">
-            <div class="col-md-4">
-                <h1 style = "color: #0BADA6;">Summary: Latitude vs.X</h1>
+            <div class="col-md-7">
+                <div class = "box">
+                <h1 style = "color: #0BADA6;">Cloudiness</h1>
                 <hr class = "my-4">
-                <img src = "Fig1.png" class = "float-left" width="300px"/>
-                The purpose of this project was to analyze the weather changes as you get close to the equator.
-                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                <br><br>
-                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
-                This sit provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations wintessed.  
+                <img src = "Fig3.png" class = "float-left" width="300px"/>
+            <br><br><br><br><br>
+                This image offers some insight on how latitude effects cloudiness.  
+                As you can see by the scatter plot, there seems to be zero to no correlation to latitude and how cloudy a place is.
+                The assumption can made that where ever you live there will be cloudy days.
             </div>
-            <div class = "col-md-4">
-                <h1 style="color: #0BADA6;">Visualizations</h1>
-                <hr class = "my-4">
-                <img src = "Fig1.png" width="300px"/>
-                <img src = "Fig2.png" width="300px"/>
-                <img src = "Fig3.png" width="300px"/>
-                <img src = "Fig4.png" width="300px"/>
             </div>
+            <div class="col-lg-5">
+                <div class="box">
+                  <h2 style="color: #0BADA6;">Visualizations</h2>
+                  <div class="container">
+                        <div class="row" >
+                          <div class="col-6">
+                            <a href="max_temp.html">
+                              <img class="panel" src="Fig1.png" width="230px" height="190px" alt="Max Temp Chart">
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="humidity.html">
+                              <img class="panel" src="Fig2.png" width="230px" height="190px" alt="Humidity Chart">
+                            </a>
+                          </div>
+                        </div>
+            
+                        <div class="row" >
+                          <div class="col-6">
+                            <a href="cloudiness.html">
+                              <img class="panel" src="Fig3.png" width="230px" height="190px" alt="Cloudiness Chart">
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="wind-speed.html">
+                              <img class="panel" src="Fig4.png" width="230px" height="190px" alt="Wind Speed Chart">
+                            </a>
+                          </div>
+                        </div>
+                 </div>
+          </div>
+        </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
