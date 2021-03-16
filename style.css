@@ -15,14 +15,14 @@
 .body {
     background: #cdcdcd;
 }
-/* .col-md-7 {
+.col-md-5{
     width: fit-content;
     height: fit-content;
-    margin-left: 100px;
+    margin-left: 70px;
     margin-top: 100px;
     padding: 5px;
     background-color: white;
-}  */
+} 
 
 .dropdown {
     font-size: 16px;
@@ -53,13 +53,7 @@
     margin-right: 300px;
 
 }
-/* .col-md-5 {
-    width: fit-content;
-    height: fit-content;
-    margin-left: 100px;
-    margin-top: 100px;
-    padding: 5px;
-    background-color: white; */
+
 .box2 {
     margin-bottom: 40px;
     margin-top: 10px;
@@ -72,8 +66,25 @@
     height: fit-content;
 
 @media (max-width: 600px) {
-    .navbar-expand-lg .navbar-toggler
-    display: none;
+    .navbar-expand-lg {
+    background-color: #000000;
+    }
+    .navbar {
+    max-height: none;
+    padding: inherit;
         }
- 
-    
+    .navbar div {
+          margin: inherit;
+          background-color: white;
+        }
+    .navbar-brand {
+          padding: 10px;
+        }
+    button{
+          margin-right: 30px;
+        }
+    button:focus {
+          outline: 1px dotted;
+          outline: auto 5px;
+        }
+    }
