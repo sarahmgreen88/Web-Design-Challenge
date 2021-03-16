@@ -64,27 +64,15 @@
     margin-right: 15px;
     width: fit-content;
     height: fit-content;
+    }
 
-@media (max-width: 600px) {
-    .navbar-expand-lg {
-    background-color: #000000;
-    }
-    .navbar {
-    max-height: none;
-    padding: inherit;
+
+    @media (max-width: 600px) {
+
+        .navbar-toggler-icon {
+          visibility: visible;
         }
-    .navbar div {
-          margin: inherit;
-          background-color: white;
+        .body {
+            background: white;
         }
-    .navbar-brand {
-          padding: 10px;
-        }
-    button{
-          margin-right: 30px;
-        }
-    button:focus {
-          outline: 1px dotted;
-          outline: auto 5px;
-        }
-    }
+      }
